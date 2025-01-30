@@ -1,0 +1,57 @@
+/* p {
+    color: pink;
+}
+
+h1,
+h2 {
+    color: blue;
+    border-bottom: 1px black;
+}
+
+p {
+    color: grey;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+em {
+    font-family: monospace;
+}
+div p{
+    color: purple;
+}
+ul:orange >li{
+    color: orange;
+}
+h1+p{
+    color: teal;
+
+} */
+
+body{
+    font-size: small;
+    font-family:'Courier New', Courier, monospace;
+    line-height: 1.6em;
+}
+h1,h2{
+    color: teal;
+}
+h1{
+    font-size: 150%;
+}
+h2{
+    font-size: 130%;
+}
+.guarantee{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    background-color: lightblue;
+    padding: 25px;
+    margin: 30px;
+    background-image: url(images/background.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
