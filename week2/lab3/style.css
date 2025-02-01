@@ -1,0 +1,167 @@
+/* Set the font family, margin, and padding for the entire page */
+body {
+  font-family: "Merriweather";
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style individual playlists */
+.playlist {
+  margin: 20px;
+  text-align: center;
+  border: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  color: black;
+  padding: 20px;
+  background-color: #181818;
+}
+
+/* Style images within playlists */
+.playlist img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* Style links within playlists */
+.playlist a {
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+
+/* Style buttons */
+.button {
+  background-color: rgb(255, 235, 205);
+  color: green;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Set background color for body */
+body {
+  background-color: black;
+}
+
+/* Style headings */
+h1 {
+  margin: 20px;
+  color: white;
+}
+
+/* Style navbar */
+.navbar {
+  position: sticky;
+  background-color: #181818;
+  top: 0;
+  width: 100%;
+  padding: 35px;
+}
+
+/* Style navigation buttons */
+.button3 {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.button4 {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Set text color for paragraphs */
+p {
+  color: #E4EBF7;
+}
+
+/* Style wrapper */
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  background-color: black;
+}
+
+/* Style header with background image */
+header {
+  background-image: url(imgss/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 2vh;
+  height: auto;
+  padding: 20%;
+}
+
+/* Style footer */
+footer,.bio {
+  background-color: #181818;
+  padding-bottom: 1rem;
+  color: white;
+  padding: 10px;
+}
+
+/* Define styles for icons, footer, and headings */
+.icons,
+footer,
+h1,
+.bio {
+  margin: 25px;
+}
+
+/* Style icons */
+.icons {
+  color: orange;
+}
+a:hover{
+  color:orangered;
+}
+.bio h1{
+  padding:0;
+  margin:0;
+}
+
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  /* Adjust grid layout for larger screens */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* Set background image for body on larger screens */
+  body {
+    background-image: url(imgss/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2vh;
+    height: auto;
+    padding: 0;
+  }
+}
