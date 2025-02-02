@@ -120,7 +120,7 @@ Reduce the footer font size so that it is smaller than the parent font size.
 */
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial,sans-serif;
 }
 
 .header {
