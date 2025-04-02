@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let chevy= {
+            make:"chevy",
+            model: "Bel Air",
+            year: 1957,
+            color: "red",
+            passenger: 2,
+            convertable: false,
+            mileage:1021,
+            fuel:0,
+            started: false,
+            start: function(){
+                if (this.fuel ==0){
+                    alert("the car is on empty fuel, fill up before starting")
+                }
+                else{
+                this.started = true;
+                }
+            },
+            stop: function(){
+                this.startedc= false;
+            },
+            drive: function(){
+                if(this.started){
+                    if(this.fuel>0){
+                    alert(this.make + " " + this.model + " goes Zoom Zoom");
+                }
+                    else{
+                        alert("out of fuel");
+                        this.stop();
+                    }
+
+            }
+                else{
+                    alert("you need to start the engine first,");
+                }
+
+            },
+
+            addFuel: function(amount){
+                this.fuel = this.fuel + amount;
+            }
+        };
+
+        let fiat= {
+            make:"first",
+            model: "500",
+            color:"blue",
+            passenger:3,
+            covertable: false,
+            mileage: 1923,
+            started: false,
+            start: function(){
+                this.started = true;
+            },
+            stop: function(){
+                this.startedc= false;
+            },
+            drive: function(){
+                if(this.started){
+                    alert(this.make + " " + this.model + " goes Zoom Zoom");
+                }
+                else{
+                    alert("you need to start the engine first,");
+                }
+
+            }
+
+        };
+        let cadi= {
+            make:"GM",
+            model: "500",
+            year: 1982,
+            color:"blue",
+            passenger:3,
+            covertable: false,
+            mileage: 1923,
+            started: false,
+            start: function(){
+                this.started = true;
+            },
+            stop: function(){
+                this.startedc= false;
+            },
+            drive: function(){
+                if(this.started){
+                    alert(this.make + " " + this.model + " goes Zoom Zoom");
+                }
+                else{
+                    alert("you need to start the engine first,");
+                }
+
+            }
+        };
+        let taxi= {
+            make: "webville motors",
+            model: "taxi",
+            year: 1955,
+            color:"yellow",
+            passenger:4,
+            covertable: false,
+            mileage: 24342,
+            started: false,
+            start: function(){
+                this.started = true;
+            },
+            stop: function(){
+                this.startedc= false;
+            },
+            drive: function(){
+                if(this.started){
+                    alert(this.make + " " + this.model + " goes Zoom Zoom");
+                }
+                else{
+                    alert("you need to start the engine first,");
+                }
+
+            }
+        };
+
+        chevy.start();
+        chevy.drive();
+        chevy.addFuel(2);
+        chevy.start();
+        chevy.drive();
+        chevy.drive();
+        chevy.drive();
+        chevy.stop();
+
+        function prequal(car){
+            if (car.mileage > 10000){
+                return false;
+            }
+            else if(car.year>1960){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+
+        let worthALook = prequal(taxi);
+
+        //if(worthALook){
+        //    console.log("you gotta check out this " + taxi.make + " " + taxi.model);
+       // }
+       // else{
+       //     console.log("you should really pass on the " + taxi.make + " " + taxi.model);
+       // }
+
+       function isWorthALook(didQualify, car){
+        if (didQualify){
+            onsole.log("you gotta check out this " + car.make + " " + car.model);
+        }
+        else{
+            console.log("you should really pass on the " + car.make + " " + car.model);
+        }
+       }
+
+       isWorthALook(prequal(taxi),taxi);
+       isWorthALook(prequal(cadi),cadi);
+       isWorthALook(prequal(chevy),chevy);
+       isWorthALook(prequal(fiat),fiat);
+
+       function makeCar(){
+        let make = ["chevy","GM","fiat","webmotors","tucker"];
+        let models = ["cadillac", "500", "bel-air","taxi","torpedo"];
+        let years =[1955,1957,1932,1922,1983];
+        let colors = ["red","blue","yellow","white","tan"];
+        let convertable =[true,false];
+
+        let rand1 = Math.floor(Math.random()* make.length);
+        let rand2 = Math.floor(Math.random()* models.length);
+        let rand3 = Math.floor(Math.random()* years.length);
+        let rand4 = Math.floor(Math.random()* colors.length);
+        let rand5 = Math.floor(1+ Math.random()*5);
+        let rand6 = Math.floor(Math.random()* convertable.length);
+
+        let car = {
+            make: makes[rand1],
+            model: models[rand2],
+            year: years[rand3],
+            color: colors[rand4],
+            passenger: rand5,
+            convertable: convertables[rand6],
+            mileage: 0
+        };
+        return car;
+
+       }
+
+       function displayCar(car){
+        console.log("your new car is a " + car.year+ " "+ car.make + " " + car.model);
+       }
+
+       let carToSee = makeCar();
+       displayCar(carToSell);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

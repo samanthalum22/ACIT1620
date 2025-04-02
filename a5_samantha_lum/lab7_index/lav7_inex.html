@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        windows.onload = init;
+
+        function init(){
+            let images = document.getElementsByTagName("img");
+            for(let i=0;i,images.length;i++){
+                images[i].onclick=showAnswer;
+            }
+           // let image = document.getElementbyID("zero");
+            //image.onclick = showAnswerZero;
+
+            //let image1 = document.getElementById("one");
+            //image1.onclick = showAnswerOne;
+        }
+
+        function showAnswer(eventObj){
+           // let image = document.getElementById("zero")
+            //image.src = "images_Week12/zero.jpg"
+            let image = eventObj.target;
+            let name = image.id;
+            name = "images_week12/" + name + ".jpg";
+            image.src = name;
+        }
+    </script>
+   
+</head>
+<body>
+    <img id="zero" src="images_Week12/zeroblur.jpg">
+    <img id="one" src="images_Week12/oneblur.jpg">
+    <img id="two" src="images_Week12/twoblur.jpg">
+    <img id="three" src="images_Week12/threeblur.jpg">
+    <img id="four" src="images_Week12/fourblur.jpg">
+    <img id="five" src="images_Week12/fiveblur.jpg">
+    
+</body>
+</html>

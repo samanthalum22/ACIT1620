@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuerySelecter example</title>
+</head>
+<body>
+  <h1 id="title">Hello wrld</h1>
+  <p class="highlight"> p1</p>
+  <p class="highlight"> p2</p>
+  <p>p3</p>
+   <button onclick="changeText()">Change text</button>
+   <script>
+    function changeText(){
+        //let elements = document.querySelectorALL(".highlight"); 
+        //firstHighlight.innerTEXT ="text changed";
+        let elements = document.querySelecterALL(".highlight");
+        elements.forEach(el=>{
+            el.style.color = "blue";
+        });
+        }
+        
+        //on exam!!
+        //differnce between html collection and node list
+
+       // query selecter all returns node list
+       //must conv array to use html collection 
+   </script>
+    
+    
+
+    
+</body>
+</html>

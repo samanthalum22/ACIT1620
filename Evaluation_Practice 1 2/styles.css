@@ -1,0 +1,79 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form button {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: hsl(120, 56%, 40%);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 5rem;
+    margin-left: auto;
+}
+header{
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top:0;
+}
+nav a{
+    color:blue;
+    text-decoration: none;
+}
+nav a:hover{
+    color:lightblue;
+}
+nav li{
+    list-style-type: none;
+}
+.img{
+    float:left;
+    width:150px;
+    height:100px;
+    padding:10px;
+}
+footer{
+    position: sticky;
+    bottom:0;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+li{
+    padding:10px;
+}
+.wrap{
+    display: flex;
+}
+
+main{
+    padding:10px;
+}
+form{
+    width: 350%;
+}
+
+
+@media only screen and (max-width: 600px){
+    nav a{
+    color:purple;
+}
+}
